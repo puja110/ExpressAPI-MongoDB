@@ -1,0 +1,23 @@
+{
+  "name": "expressapi-mongodb",
+  "version": "1.0.0",
+  "description": "Express API with MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puja110/ExpressAPI-MongoDB.git"
+  },
+  "author": "Puja Shrestha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puja110/ExpressAPI-MongoDB/issues"
+  },
+  "homepage": "https://github.com/puja110/ExpressAPI-MongoDB#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0"
+  }
+}
