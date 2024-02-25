@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const Books = require('./src/model/books');
 const { favBooks } = require('./src/data/FavoriteBooks');
+const bookRoutes = require('./src/routes/BookRoutes');
 
 const port = process.env.PORT;
 const MongoDbURL = process.env.DATABASE_URL;
@@ -43,6 +44,8 @@ InitiateMongoDBConnection()
 const insertFavoriteBooks = () => {
     Books.insertBooks(favBooks);
 }
+
+app.use('/books', bookRoutes);
 
 // starts the server and listens on port
 app.listen(port, () => {
